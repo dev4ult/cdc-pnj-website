@@ -8,19 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Event Details</title>
   </head>
   <body class="font-poppins">
-    <main>
-      <section class="container max-w-6xl mx-auto px-3 py-10 bg-teal-400 my-10 text-white">
+    <nav class="nav-bar bg-white px-3 py-4 fixed right-0 left-0 top-0 z-10">
+      <div class="container mx-auto max-w-6xl lg:flex">
+        <div class="flex items-center justify-between grow">
+          <div>
+            <a href="https://pnj.ac.id" class="flex items-center">
+              <img src="../img/pnj-logo/logo-pnj.png" alt="logo pnj" class="w-5" />
+              <span class="ml-2 text-sm font-medium relative text-teal-400">Politeknik Negeri Jakarta</span>
+            </a>
+          </div>
+          <div class="lg:hidden">
+            <a class="burger-button group cursor-pointer">
+              <div class="burger-line h-0.5 bg-black w-8 transition duration-300"></div>
+              <div class="burger-line h-0.5 bg-black my-1.5 w-8 ml-auto"></div>
+              <div class="burger-line h-0.5 bg-black w-8 ml-auto transition duration-300"></div>
+            </a>
+          </div>
+        </div>
+        <ul class="nav-group bg-white shadow-md absolute right-0 transition duration-300 top-12 translate-x-full lg:translate-x-0 lg:flex py-1.5 border-l-2 lg:static lg:shadow-none lg:p-0 lg:border-none">
+          <li class="nav-item"><a href="home.html" class="font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Home</a></li>
+          <li class="nav-item dropdown group relative">
+            <a class="cursor-pointer text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">About Us</a>
+            <ul class="dropdown-menu border-l-2 bg-white shadow-md py-1.5 hidden group-hover:block absolute top-0 right-[102%] lg:top-full lg:left-0 lg:right-auto">
+              <li class="nav-item"><a href="about-us/cdc_profile.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Profil CDC</a></li>
+              <li class="nav-item"><a href="about-us/our_team.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Our Team</a></li>
+              <li class="nav-item"><a href="about-us/training_and_preparation.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Training and Preparation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown group relative">
+            <a class="cursor-pointer text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Career Info</a>
+            <ul class="dropdown-menu border-l-2 bg-white shadow-md py-1.5 hidden group-hover:block absolute top-0 right-[102%] lg:top-full lg:left-0 lg:right-auto">
+              <li class="nav-item"><a href="career-info/tes_call.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Tes Call</a></li>
+              <li class="nav-item"><a href="career-info/payment_confirmation.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Payment Confirmation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown group relative">
+            <a class="cursor-pointer text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Company</a>
+            <ul class="dropdown-menu border-l-2 bg-white shadow-md py-1.5 hidden group-hover:block absolute top-0 right-[102%] lg:top-full lg:left-0 lg:right-auto">
+              <li class="nav-item">
+                <a href="company/procedur_of_vacancies.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Procedure of Vacancies Publication</a>
+              </li>
+              <li class="nav-item"><a href="company/choices_of_services.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Choices of Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="event.html" class="font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full bg-black text-white">Event</a></li>
+          <li class="nav-item"><a href="FAQ.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">FAQ</a></li>
+          <li class="nav-item"><a href="career_tips.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Career Tips</a></li>
+          <li class="nav-item"><a href="newsletter.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Newsletter</a></li>
+          <li class="nav-item"><a href="contact.html" class="text-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:bg-black hover:text-white">Contact</a></li>
+          <li class="nav-item">
+            <a
+              href="sign_in.html"
+              class="text-black hover:bg-black font-light lg:font-medium inline-block py-1.5 px-4 lg:text-sm w-full hover:text-white lg:border-2 lg:hover:bg-teal-400 lg:w-fit lg:rounded-full lg:border-teal-400 lg:text-teal-400 lg:py-1 lg:ml-1.5"
+              >Sign In</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container max-w-6xl mx-auto px-3 py-24">
+      <section class="bg-teal-400 text-white">
         <div class="main-content px-5">
           <img src="../img/juicy-team-analyzes-graphs-and-diograms.png" alt="content" class="w-full object-coverx max-w-full mb-4" />
           <h3 class="text-teal-400 bg-white text-xl w-fit font-semibold px-3 py-1">Webinar bersama BAT Indonesia</h3>
@@ -106,5 +158,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/navigationBar.js"></script>
   </body>
 </html>
